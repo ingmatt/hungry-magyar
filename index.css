@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, h2 {
+    margin: 0 auto;
+    width: fit-content;
+} 
+
+h1 {
+    font-size: 3rem;
+}
+
+h2, h4, .complete-order {
+    font-size: 1.5rem;
+}
+
+h4 {
+    text-align: center;
+}
+
+header {
+    padding: 16px;
+    background: #ffffff;
+    border-top: 12px solid #008000; 
+    border-bottom: 12px solid #C40000; 
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    padding: 16px 0;
+}
+
+.emoji-item-container {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.emoji-container {
+    width: 70px;         
+    height: 70px;        
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.emoji {
+    font-size: 80px;
+    line-height: 1; 
+}
+
+.item-container {
+    width: 400px;
+    margin-left: 30px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 15px 25px;
+    border-radius: 120px;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    background-color: #C40000;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #7C0000;
+}
+
+.order-container, .total-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 50px 10px 50px;
+}
+
+.total-container {
+    border-top: 2px black solid;
+}
+
+.ordered-item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+
+.grey-text {
+    color: #8B8B8B;
+}
+
+.remove:hover {
+    cursor: pointer;
+    color: #C40000;
+}
+
+.complete-order-btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.complete-order-btn {
+    background-color: #16DB99;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 20px 200px;
+    cursor: pointer;
+}
+
+.complete-order-btn:hover {
+    background-color: #14C589;
+}
+
+#order-overlay {
+    display: none;
+    position: fixed;
+    height: 520px;
+    width: 550px;
+    background-color: white;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.overlay {
+    text-align: center;
+    padding: 20px 40px;
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+input {
+    padding: 20px 30px;
+    margin: 10px;
+}
+
+.complete-order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #008000;
+    padding: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    
+}

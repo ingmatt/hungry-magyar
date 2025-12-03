@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>The Hungry Magyar</h1>
+            <h2>Eat. Drink. Be Magyar.</h2>
+        </header>
+        
+        <section id="menu-list"></section>
+        
+        <section id="order-overlay">
+            <div class="overlay">
+            <h3>Enter Card Details</h3>
+                <form>
+                    <label for="fname"></label>
+                    <input type="text" placeholder="Enter a Fullname" id="fname" name="fname" required>
+                    <label for="card"></label>
+                    <input type="text" placeholder="Enter a cardnumber" id="card" name="card" pattern="[0-9]{12,16}" maxlength="16" required>
+                    <label for="cvc"></label>
+                    <input type="text" placeholder="Enter a CVC" id="cvc" name="cvc" maxlength="3" required>
+                    <button type="submit" class="complete-order-btn" data-complete="order-complete" >Pay</button>
+                </form>
+            </div>
+        </section>
+        
+        <section id="order-list"></section>
+        
+	<script type="module" src="index.js"></script>
+    </body>
+</html>
+
