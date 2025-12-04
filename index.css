@@ -10,6 +10,7 @@ h1, h2 {
 
 h1 {
     font-size: 3rem;
+    text-align: center;
 }
 
 h2, h4, .complete-order {
@@ -21,7 +22,7 @@ h4 {
 }
 
 header {
-    padding: 16px;
+    padding: 0.75em;
     background: #ffffff;
     border-top: 12px solid #008000; 
     border-bottom: 12px solid #C40000; 
@@ -33,18 +34,18 @@ header {
     align-items: center;
     width: 100%;
     border-bottom: 1px solid grey;
-    padding: 16px 0;
+    padding: 1em 0;
 }
 
 .emoji-item-container {
     display: flex;
     align-items: center;
-    margin: 16px 0;
+    margin: 1em 0;
 }
 
 .emoji-container {
-    width: 70px;         
-    height: 70px;        
+    width: 4.375em;         
+    height: 4.375em;        
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -56,8 +57,8 @@ header {
 }
 
 .item-container {
-    width: 400px;
-    margin-left: 30px;
+    width: 25em;
+    margin-left: 2.5em;
 }
 
 .btn-container{
@@ -172,32 +173,37 @@ input {
     
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
+    
+    body {
+        font-size: 14px;
+    }
+    
+    header {
+        width: 100%;
+    }
 
     .container {
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        padding: 12px 20px;
-        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
     }
 
     .emoji-container {
-        width: 50px;
-        height: 50px;
-    }
-
-    .emoji {
-        font-size: 60px;
+        width: 50%;
     }
 
     .item-container {
-        width: 100%;
+        width: 90%;
         margin-left: 0;
     }
 
     .btn {
-        padding: 10px 18px;
-        font-size: 24px;
+        padding: 0.5rem 1.5rem;
+        font-size: 1.5rem;
     }
 
     .order-container, 
